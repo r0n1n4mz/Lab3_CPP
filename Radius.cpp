@@ -8,6 +8,6 @@ Radius::Radius(double r) {
     radius = r;
 }
 
-double Radius::getRadius() {
+double Radius::getRadius(){
     return radius;
 }

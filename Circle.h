@@ -1,5 +1,12 @@
 #include "Radius.h"
 #include <iostream>
+#include <stdexcept>
+#include <string>
+
+class CircleError : public std::runtime_error {
+public:
+    explicit CircleError(const std::string& msg) : std::runtime_error(msg) {}
+};
 
 class Circle {
     private:
@@ -16,7 +23,6 @@ class Circle {
         double computeL();
         double computeL(double r);
 
-        void printCircleinfo();
 
         friend std::istream& operator>>(std::istream& in, const Circle& circle);
         friend std::ostream& operator<<(std::ostream& out, const Circle& circle);

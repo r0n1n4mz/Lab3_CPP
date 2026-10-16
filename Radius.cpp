@@ -1,13 +1,17 @@
 #include "Radius.h" 
 
 Radius::Radius() {
-    radius = 0;
+    this->radius = 0;
 }
 
 Radius::Radius(double r) {
-    radius = r;
+    this->radius = r;
 }
 
-double Radius::getRadius(){
-    return radius;
+double Radius::getRadius() const{
+    return this->radius;
+}
+
+void Radius::setRadius(double r){
+    this->radius = r;
 }

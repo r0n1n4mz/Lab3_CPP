@@ -4,5 +4,6 @@ class Radius{
     public:
         Radius();
         Radius(double r);
-        double getRadius();
+        double getRadius() const;
+        void setRadius(double r);
 };

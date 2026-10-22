@@ -1,6 +1,5 @@
 #include "Radius.h"
 #include <iostream>
-#include <stdexcept>
 #include <string>
 
 class CircleError : public std::runtime_error {

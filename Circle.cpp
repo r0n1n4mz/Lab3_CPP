@@ -1,6 +1,5 @@
 #include "Circle.h"
 #include <cmath>
-#include <stdexcept>
 
 
 Circle::Circle(){
@@ -16,26 +15,9 @@ Circle::Circle(double r){
 }
 
 Circle::Circle( double S, double L, Radius r){
-    try{
-        this->S = S;
-        throw 1;
-        this->L = L;
-        throw 2;
-        this->r = r;
-        throw 3;
-    }
-    catch(const int errorCode){
-        if(errorCode == 1){
-            std::cout<<"Error 1. Incorrect input of the array of circle. It must be double type"<< std::endl;
-        }else if(errorCode == 2){
-            std::cout<<"Error 2. Incorrect input of the length of circle. It must be double type"<<std::endl;
-        } else if(errorCode == 3){
-            std::cout<<"Error 3. Incorrect input of the object of Radius. It must be the object of Radius class"<<std::endl;
-        }else{
-            std::cout<<"Error!!! Incorrect input on one of the 3 arguments."<<std::endl;
-        }
-
-    }
+    this->S = S;
+    this->L = L;
+    this->r = r;
 }
 
 void Circle::setL(double lValue){
